@@ -2,10 +2,10 @@ let html = document.querySelector("#html"); //该API作用：通过css选择器�
 let style = document.querySelector("#style");
 let string = `/*嘿，我是林克
 *我现在要为你演示我的言出法随，请看：
-*首先我要将文字变为绿色
+*首先我要将文字变为粉色
 */
 body{
-  color: green;
+  color: pink;
 }
 /*
 *我要一个div
