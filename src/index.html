@@ -8,67 +8,14 @@
     />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>跳动代码-个人介绍</title>
+    <link rel="stylesheet" href="style.css" />
+    <style id="style"></style>
   </head>
   <body>
-    <style id="style"></style>
     <div id="html"></div>
     <div id="div1Wrapper">
       <div id="div1"></div>
     </div>
-    <style>
-      #div1{
-        position: fixed;
-        left: 50%;
-        transform: translateX(-50%);
-        top: 20px;
-      }
-      * {
-        margin: 0;
-        padding: 0;
-      }
-      * {
-        box-sizing: border-box;
-      }
-      *::before {
-        box-sizing: border-box;
-      }
-      *::after {
-        box-sizing: border-box;
-      }
-      #html {
-        word-break: break-all; /*让文字到行尾自动换行*/
-      }
-      #div1::before {
-        content: "";
-        display: block;
-        position: absolute;
-      }
-      #div1::after {
-        content: "";
-        display: block;
-        position: absolute;
-      }
-
-
-      @media (orientation:portrait) { /*用于判断是竖屏。orientation:landscape用于判断横屏*/
-        /*媒体查询，在宽度500px以下生效*/
-        #html {
-          height: 50vh;
-          overflow: auto;
-        }
-        #div1Wrapper {
-          height: 50vh;
-          position: relative;
-          top: 0;
-          right: 0;
-        }
-        #div1 {
-          position: relative;
-          top: 25%;
-          right: 0;
-        }
-      }
-    </style>
     <script src="main.js"></script>
   </body>
 </html>
